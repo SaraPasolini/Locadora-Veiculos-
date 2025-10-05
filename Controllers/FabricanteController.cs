@@ -35,6 +35,15 @@ public class FabricanteController : ControllerBase
         return Ok(_mapper.Map<FabricanteDTO>(item));
     }
 
+    [HttpGet("nome/{nome}")] // Get por nome
+    public async Task<ActionResult<IEnumerable<FabricanteDTO>>> GetByName(string nome)
+    {
+        var list = await _context.Fabricantes
+            .Where(f => f.Nome.Contains(nome))
+            .ToListAsync();
+        return Ok(_mapper.Map<List<FabricanteDTO>>(list));
+    }
+
     [HttpPost] // criar fabricante
     public async Task<ActionResult<FabricanteDTO>> Post(FabricanteDTO dto)
     {

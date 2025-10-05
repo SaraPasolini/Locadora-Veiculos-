@@ -27,6 +27,18 @@ public class PagamentoController : ControllerBase
         return Ok(_mapper.Map<List<PagamentoDTO>>(list));
     }
 
+    [HttpGet("{id}")] // Get por id
+    public async Task<ActionResult<PagamentoDTO>> Get(int id)
+    {
+        var entity = await _context.Pagamentos.Include(p => p.Aluguel)
+            .FirstOrDefaultAsync(p => p.Id == id);
+        if (entity == null)
+        {
+            return NotFound();
+        }
+        return Ok(_mapper.Map<PagamentoDTO>(entity));
+    }
+
     [HttpPost] // criar pagamento
     public async Task<ActionResult<PagamentoDTO>> Post(PagamentoDTO dto)
     {

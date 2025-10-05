@@ -39,6 +39,20 @@ public class AluguelController : ControllerBase
         return Ok(_mapper.Map<AluguelDTO>(entity));
     }
 
+    // get por cliente
+    [HttpGet("cliente/{clienteId}")]
+    public async Task<ActionResult<IEnumerable<AluguelDTO>>> GetByCliente(int clienteId
+    )
+    {
+        var list = await _context.Alugueis
+            .Include(a => a.Cliente)
+            .Include(a => a.Veiculo)
+            .Where(a => a.ClienteId == clienteId)
+            .ToListAsync();
+
+        return Ok(_mapper.Map<List<AluguelDTO>>(list));
+    }
+
     [HttpPost] // criar aluguel
     public async Task<ActionResult<AluguelDTO>> Post(AluguelDTO dto)
     {

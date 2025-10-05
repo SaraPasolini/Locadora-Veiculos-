@@ -172,3 +172,4 @@ C:\Users\saraa\Downloads\VendaVeiculosApiOficial\bin\Debug\net9.0\zh-Hans\Micros
 C:\Users\saraa\Downloads\VendaVeiculosApiOficial\bin\Debug\net9.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 C:\Users\saraa\Downloads\VendaVeiculosApiOficial\bin\Debug\net9.0\runtimes\unix\lib\net7.0\Microsoft.Data.SqlClient.dll
 C:\Users\saraa\Downloads\VendaVeiculosApiOficial\bin\Debug\net9.0\runtimes\win\lib\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\saraa\Downloads\VendaVeiculosApiOficial\obj\Debug\net9.0\VendaVeiculosApi.sourcelink.json
