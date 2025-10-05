@@ -1,0 +1,18 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace VendaVeiculosApi.Models;
+
+public class Pagamento
+{
+    [Key]
+    public int Id { get; set; }
+
+    public int AluguelId { get; set; }
+    public Aluguel? Aluguel { get; set; }
+
+    public DateTime DataPagamento { get; set; }
+    
+    public decimal Valor { get; set; }
+
+    public string Metodo { get; set; } = string.Empty;
+}
