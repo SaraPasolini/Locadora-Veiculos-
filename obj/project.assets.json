@@ -5304,11 +5304,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\saraa\\Downloads\\VendaVeiculosApiOficial\\VendaVeiculosApi.csproj",
+      "projectUniqueName": "C:\\Users\\saraa\\Downloads\\VendaVeiculosApiOficialcomdocumentação\\VendaVeiculosApi.csproj",
       "projectName": "VendaVeiculosApi",
-      "projectPath": "C:\\Users\\saraa\\Downloads\\VendaVeiculosApiOficial\\VendaVeiculosApi.csproj",
+      "projectPath": "C:\\Users\\saraa\\Downloads\\VendaVeiculosApiOficialcomdocumentação\\VendaVeiculosApi.csproj",
       "packagesPath": "C:\\Users\\saraa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\saraa\\Downloads\\VendaVeiculosApiOficial\\obj\\",
+      "outputPath": "C:\\Users\\saraa\\Downloads\\VendaVeiculosApiOficialcomdocumentação\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5397,7 +5397,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

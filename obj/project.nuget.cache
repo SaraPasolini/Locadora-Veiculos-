@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9ZzLFCIOJVQ=",
+  "dgSpecHash": "jWT4F6CxcQw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\saraa\\Downloads\\VendaVeiculosApiOficial\\VendaVeiculosApi.csproj",
+  "projectFilePath": "C:\\Users\\saraa\\Downloads\\VendaVeiculosApiOficialcomdocumentação\\VendaVeiculosApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saraa\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\saraa\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -97,9 +97,9 @@
       "code": "NU1603",
       "level": "Warning",
       "message": "VendaVeiculosApi depende de Microsoft.Data.SqlClient (>= 5.2.0-preview3.24372.2) mas Microsoft.Data.SqlClient 5.2.0-preview3.24372.2 não foi encontrado. Microsoft.Data.SqlClient 5.2.0-preview4.23342.2 foi resolvido.",
-      "projectPath": "C:\\Users\\saraa\\Downloads\\VendaVeiculosApiOficial\\VendaVeiculosApi.csproj",
+      "projectPath": "C:\\Users\\saraa\\Downloads\\VendaVeiculosApiOficialcomdocumentação\\VendaVeiculosApi.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\saraa\\Downloads\\VendaVeiculosApiOficial\\VendaVeiculosApi.csproj",
+      "filePath": "C:\\Users\\saraa\\Downloads\\VendaVeiculosApiOficialcomdocumentação\\VendaVeiculosApi.csproj",
       "libraryId": "Microsoft.Data.SqlClient",
       "targetGraphs": [
         "net9.0"
