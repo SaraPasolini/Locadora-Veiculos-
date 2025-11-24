@@ -5,7 +5,7 @@ body {
             color: #333;
         }
 
-        header {
+        .header {
             background: #ff4fa3;
             padding: 20px;
             text-align: center;
@@ -13,6 +13,7 @@ body {
             font-size: 28px;
             font-weight: 600;
             box-shadow: 0 4px 12px #0000002a;
+            justify-content: center;
         }
 
         .container {
@@ -97,3 +98,54 @@ body {
             margin: 2px;
             font-size: 14px;
         }
+
+
+    .header {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 50px 1fr 50px;
+        font-family: Poppins, sans-serif;
+    }
+
+    
+    .fa-solid.fa-house {
+        display: flex;
+        align-items: center;
+        justify-self: start; 
+        color: white;
+        margin: 0; 
+        padding-left: 6px; 
+    }
+
+   
+    .home-btn i {
+        font-size: 28px;
+        cursor: pointer;
+        transition: 0.2s;
+        margin: 0;
+    }
+
+    .home-btn i:hover {
+        transform: scale(1.15);
+    }
+
+    
+    .titulo {
+        display: flex;
+        align-items: center;
+        justify-self: center; 
+        gap: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .titulo i {
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .titulo i:hover {
+        transform: scale(1.2);
+    }
+
