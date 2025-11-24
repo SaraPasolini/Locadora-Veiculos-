@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabricantes - Locadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/fabricantes.css">
+</head>
+<body>
+    <body>
+
+    <header>Cadastro de Fabricantes</header>
+
+    <div class="container">
+        <h2>Adicionar Fabricantes</h2>
+
+        <div class="form-group">
+            <label>Nome</label>
+            <input type="text" id="nome">
+        </div>
+
+        <div class="form-group">
+            <label>Origem</label>
+            <input type="text" id="origem">
+        </div>
+        <button onclick="adicionarFabricante()">Cadastrar Fabricante</button>
+
+        <h2>Lista de Fabricantes</h2>
+        <table id="tabelaFabricantes">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Origem</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <h2>Buscar Fabricantes por ID</h2>
+
+        <div class="form-group">
+            <input type="text" id="buscarId" placeholder="Buscar por ID">
+            <button onclick="buscarFabricantePorId()">Buscar</button>
+        </div>
+
+        <h2>Buscar Fabricantes por Nome</h2>
+
+        <div class="form-group">
+            <input type="text" id="buscarNome" placeholder="Buscar por Nome">
+            <button onclick="buscarFabricantePorNome()">Buscar</button>
+        </div>
+
+        <h2> Editar Fabricante </h2>
+        <div class="form-group">
+            <label>ID do Fabricante</label>
+            <input type="text" id="editarId">
+            <label>Nome</label>
+            <input type="text" id="editarNome">
+            <label>Origem</label>
+            <input type="text" id="editarOrigem">
+            <button type="button" onclick="editarFabricante(event)">Salvar Alterações</button>
+        </div>
+
+
+        <h2> Deletar Fabricante </h2>
+        <div class="form-group">
+            <label>ID do Fabricante</label>
+            <input type="text" id="deletarId">
+            <button onclick="deletarFabricante()">Deletar Fabricante</button>
+        </div>
+    </div>
+
+    <script src="./js/fabricante.js"></script>
+</body>
+
+</html>

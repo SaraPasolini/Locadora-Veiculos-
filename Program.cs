@@ -4,7 +4,6 @@ using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -16,6 +15,17 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // AutoMapper
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+// ✅ CONFIGURAÇÃO DO CORS (ANTES DO builder.Build)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
 
 // Configure middleware
@@ -25,12 +35,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "VendaVeiculosApi v1");
-        c.RoutePrefix = string.Empty; 
+        c.RoutePrefix = string.Empty;
     });
 }
 else
 {
-    // Produção (opcional)
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
@@ -39,7 +48,12 @@ else
 }
 
 app.UseHttpsRedirection();
+
+// ✅ ATIVAR O CORS AQUI (APÓS HTTPS e ANTES DOS CONTROLLERS)
+app.UseCors("AllowAll");
+
 app.UseAuthorization();
+
 app.MapControllers();
 
 app.Run();

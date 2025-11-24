@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguéis - Locadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/cliente.css">
+</head>
+<body>
+    <header>Cadastro de Aluguéis</header>
+    <div class="container">
+
+        
+        <h2>Adicionar Aluguel</h2>
+        <div class="form-group">
+            <label>ID do Cliente</label>
+            <input type="text" id="clienteId">
+            <label>ID do Veículo</label>
+            <input type="text" id="veiculoId">
+            <label>Data de Início</label>
+            <input type="date" id="dataInicio">
+            <label>Data de Devolução</label>
+            <input type="date" id="dataDevolucao">
+            <label>Quilometragem Inicial</label>
+            <input type="number" id="quilometragemInicial">
+            <label>Quilometragem Final</label>
+            <input type="number" id="quilometragemFinal">
+            <label>Valor Diária</label>
+            <input type="number" step="0.01" id="valorDiaria">
+            <label>Valor Total</label>
+            <input type="number" step="0.01" id="valorTotal">
+            <button type="button" onclick="adicionarAluguel()">Cadastrar Aluguel</button>
+        </div>
+
+       
+        <h2>Lista de Aluguéis</h2>
+        <table id="tabelaAlugueis">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cliente</th>
+                    <th>Veículo</th>
+                    <th>Data Início</th>
+                    <th>Data Devolução</th>
+                    <th>Quilometragem Inicial</th>
+                    <th>Quilometragem Final</th>
+                    <th>Valor Diária</th>
+                    <th>Valor Total</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        
+        <h2>Buscar Aluguel por ID</h2>
+        <div class="form-group">
+            <input type="text" id="buscarAluguelID" placeholder="ID do Aluguel">
+            <button type="button" onclick="buscarAluguelPorID()">Buscar</button>
+        </div>
+
+       
+        <h2>Buscar Aluguéis por Cliente</h2>
+        <div class="form-group">
+            <input type="text" id="buscarAluguelIDCliente" placeholder="ID do Cliente">
+            <button type="button" onclick="buscarAlugueisPorCliente()">Buscar</button>
+        </div>
+
+       
+        <h2>Editar Aluguel</h2>
+        <div class="form-group">
+            <label>ID do Aluguel</label>
+            <input type="text" id="editarId">
+            <label>ID do Cliente</label>
+            <input type="text" id="editarClienteId">
+            <label>ID do Veículo</label>
+            <input type="text" id="editarVeiculoId">
+            <label>Data de Início</label>
+            <input type="date" id="editarDataInicio">
+            <label>Data de Devolução</label>
+            <input type="date" id="editarDataDevolucao">
+            <label>Quilometragem Inicial</label>
+            <input type="number" id="editarQuilometragemInicial">
+            <label>Quilometragem Final</label>
+            <input type="number" id="editarQuilometragemFinal">
+            <label>Valor Diária</label>
+            <input type="number" step="0.01" id="editarValorDiaria">
+            <label>Valor Total</label>
+            <input type="number" step="0.01" id="editarValorTotal">
+            <button onclick='editarAluguel()'>Salvar Alterações</button>
+        </div>
+
+        
+        <h2>Deletar Aluguel</h2>
+        <div class="form-group">
+            <label>ID do Aluguel</label>
+            <input type="text" id="deletarId">
+            <button type="button" onclick="deletarAluguel()">Deletar Aluguel</button>
+        </div>
+    </div>
+
+    <script src="./js/aluguel.js"></script>
+</body>
+</html>

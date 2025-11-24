@@ -1,0 +1,140 @@
+body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(to bottom right, #ffb6da, #ffe6f2);
+            color: #333;
+        }
+
+        header {
+            background: #ff4fa3;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px #0000002a;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px #0000001a;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff4fa3;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #444;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 2px solid #ff9ec9;
+            margin-top: 6px;
+            font-size: 15px;
+        }
+
+        input:focus {
+            border-color: #ff4fa3;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #ff4fa3;
+            border: none;
+            color: white;
+            font-size: 17px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #e93c8d;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 2px solid #ffd7ec;
+        }
+
+        th {
+            background: #ff4fa3;
+            color: white;
+        }
+
+        tr:hover {
+            background: #ffe6f4;
+        }
+
+        .actions button {
+            width: auto;
+            padding: 6px 12px;
+            margin: 2px;
+            font-size: 14px;
+        }
+
+
+        .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* joga a casa pra esquerda e o título pro centro */
+    
+    font-family: Poppins, sans-serif;
+}
+
+.fa-solid.fa-house{
+    margin-right: 80px;
+}
+
+.home-btn i {
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.home-btn i:hover {
+    transform: scale(1.15);
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.titulo i {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.titulo i:hover {
+    transform: scale(1.2);
+}
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veículos - Locadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/veiculos.css">
+</head>
+<body>
+    <body>
+
+    <header>Cadastro de Veículos</header>
+
+    <div class="container">
+        <h2>Adicionar Veículo</h2>
+
+        <div class="form-group">
+            <label>Modelo</label>
+            <input type="text" id="modelo">
+        </div>
+
+        <div class="form-group">
+            <label>Placa</label>
+            <input type="text" id="placa">
+        </div>
+
+        <div class="form-group">
+            <label>Cor</label>
+            <input type="text" id="cor">
+        </div>
+
+         <div class="form-group">
+            <label>Ano</label>
+            <input type="text" id="ano">
+        </div>
+
+         <div class="form-group">
+            <label>Quilometragem</label>
+            <input type="text" id="quilometragem">
+        </div>
+
+         <div class="form-group">
+            <label>Preço</label>
+            <input type="text" id="preco">
+        </div>
+
+         <div class="form-group">
+            <label>ID do Fabricante</label>
+            <input type="text" id="idFabricante">
+        </div>
+
+        <button onclick="adicionarVeiculo()">Cadastrar Veículo</button>
+
+        <h2>Lista de Veículos</h2>
+        <table id="tabelaVeiculos">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Modelo</th>
+                    <th>Placa</th>
+                    <th>Cor</th>
+                    <th>Ano</th>
+                    <th>Quilometragem</th>
+                    <th>Preço</th>
+                    <th>ID do Fabricante</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <h2>Buscar Veículos</h2>
+
+        <div class="form-group">
+            <input type="text" id="buscarID" placeholder="Buscar por ID">
+            <button onclick="buscarVeiculos()">Buscar</button>
+        </div>
+
+        <h2> Buscar Veículos por Fabricante </h2>
+        <div class="form-group">
+            <input type="text" id="buscarIdFabricante" placeholder="Buscar por ID do Fabricante">
+            <button onclick="buscarVeiculosPorFabricante()">Buscar</button>
+        </div>
+
+        <h2> Editar Veículo </h2>
+        <div class="form-group">
+            <label>ID do Veículo</label>
+            <input type="text" id="editarId">
+            <label>Modelo</label>
+            <input type="text" id="editarModelo">
+            <label>Placa</label>
+            <input type="text" id="editarPlaca">
+            <label>Cor</label>
+            <input type="text" id="editarCor">
+            <label>Ano</label>
+            <input type="text" id="editarAno">
+            <label>Quilometragem</label>
+            <input type="text" id="editarQuilometragem">
+            <label>Preço</label>
+            <input type="text" id="editarPreco">
+            <label>ID do Fabricante</label>
+            <input type="text" id="editarIdFabricante">
+            <button type="button" onclick="editarVeiculo(event)">Salvar Alterações</button>
+        </div>
+
+
+        <h2> Deletar Veículo </h2>
+        <div class="form-group">
+            <label>ID do Veículo</label>
+            <input type="text" id="deletarId">
+            <button onclick="deletarVeiculo()">Deletar Veículo</button>
+        </div>
+    </div>
+
+    <script src="./js/veiculo.js"></script>
+</body>
+
+</html>
