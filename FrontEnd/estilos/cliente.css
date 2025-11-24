@@ -5,7 +5,7 @@ body {
             color: #333;
         }
 
-        header {
+        .header {
             background: #ff4fa3;
             padding: 20px;
             text-align: center;
@@ -13,6 +13,7 @@ body {
             font-size: 28px;
             font-weight: 600;
             box-shadow: 0 4px 12px #0000002a;
+            justify-content: center;
         }
 
         .container {
@@ -99,42 +100,52 @@ body {
         }
 
 
-        .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around; /* joga a casa pra esquerda e o título pro centro */
-    
-    font-family: Poppins, sans-serif;
-}
+    .header {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 50px 1fr 50px;
+        font-family: Poppins, sans-serif;
+    }
 
-.fa-solid.fa-house{
-    margin-right: 80px;
-}
+    /* Ícone da casa: fixa na ponta esquerda do header */
+    .fa-solid.fa-house {
+        display: flex;
+        align-items: center;
+        justify-self: start; /* coloca no início da célula do grid */
+        color: white;
+        margin: 0; /* remove margens que deslocavam o ícone */
+        padding-left: 6px; /* pequeno espaçamento a partir da borda */
+    }
 
-.home-btn i {
-    font-size: 28px;
-    cursor: pointer;
-    transition: 0.2s;
-}
+    /* Se houver um botão de home, garantir comportamento simples */
+    .home-btn i {
+        font-size: 28px;
+        cursor: pointer;
+        transition: 0.2s;
+        margin: 0;
+    }
 
-.home-btn i:hover {
-    transform: scale(1.15);
-}
+    .home-btn i:hover {
+        transform: scale(1.15);
+    }
 
-.titulo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 24px;
-    font-weight: bold;
-}
+    /* Título centralizado no header */
+    .titulo {
+        display: flex;
+        align-items: center;
+        justify-self: center; /* centraliza dentro da célula do grid */
+        gap: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
 
-.titulo i {
-    cursor: pointer;
-    transition: 0.2s;
-}
+    .titulo i {
+        cursor: pointer;
+        transition: 0.2s;
+    }
 
-.titulo i:hover {
-    transform: scale(1.2);
-}
+    .titulo i:hover {
+        transform: scale(1.2);
+    }
 
