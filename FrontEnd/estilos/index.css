@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ffd1e8, #ffb2d6, #ffe6f2);
+    background: linear-gradient(135deg, #ffd1e8, #ffb3d6, #ffe6f2);
     background-size: cover;
     color: #333;
 }
@@ -24,7 +24,7 @@ body {
     margin-top: 10px;
 }
 
-/* Container dos cards */
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -32,7 +32,7 @@ body {
     padding: 40px 60px;
 }
 
-/* Cards */
+
 .card {
     background: white;
     padding: 25px;
